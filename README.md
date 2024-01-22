@@ -1,22 +1,22 @@
 # Engineering-Design-VI
 
-# H1
-## H2
-### H3
+# Welcome
+## To My
+### Readme.md file
 
-**bold text**
+**Below is some info on me**
 
-*italicized text*
+*Thomas Pinto*
 
-> blockquote
+> blockquote This is a quote
 
-1. First item
-2. Second item
-3. Third item
+1. EE major
+2. Nap enjoyer
+3. My Favorite color is Sky-blue
 
-- First item
-- Second item
-- Third item
+- This is 
+- an unorganized
+- file
 
 `code`
 
