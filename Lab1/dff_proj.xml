@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project>
+	<metadata>
+		<version smartsim="1.4.1"/>
+	</metadata>
+	<name>Project 2</name>
+	<description></description>
+	<component root="true">/home/pinto/Desktop/SmartSim_ProjComp/dff_comp.ssc</component>
+</project>

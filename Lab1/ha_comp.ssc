@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<custom_component>
+	<metadata>
+		<version smartsim="1.4.1"/>
+	</metadata>
+	<name>Untitled Component 1</name>
+	<description></description>
+	<label></label>
+	<bound right="0" down="0" left="0" up="0"/>
+	<colour a="0" r="255" g="255" b="255"/>
+	<wire id="0">
+		<path>
+			<point x="85" y="-70"/>
+			<point x="120" y="-70"/>
+		</path>
+	</wire>
+	<wire id="1">
+		<path>
+			<point x="85" y="-20"/>
+			<point x="120" y="-20"/>
+		</path>
+	</wire>
+	<wire id="2">
+		<path>
+			<point x="-95" y="-80"/>
+			<point x="15" y="-80"/>
+		</path>
+		<path>
+			<point x="-5" y="-80"/>
+			<point x="-5" y="-30"/>
+			<point x="15" y="-30"/>
+		</path>
+		<marker x="-5" y="-80"/>
+	</wire>
+	<wire id="3">
+		<path>
+			<point x="-100" y="-20"/>
+			<point x="15" y="-60"/>
+		</path>
+		<path>
+			<point x="-40" y="-40"/>
+			<point x="15" y="-10"/>
+		</path>
+		<marker x="-40" y="-40"/>
+	</wire>
+	<component id="0" def="Xor" x="50" y="-70" direction="right" flip="false">
+		<connection flow="in" pinid="0">
+			<subpin wireid="2" invert="false"/>
+			<subpin wireid="3" invert="false"/>
+		</connection>
+		<connection flow="out" pinid="1" wireid="0" invert="false"/>
+	</component>
+	<component id="1" def="And" x="50" y="-20" direction="right" flip="false">
+		<connection flow="in" pinid="0">
+			<subpin wireid="2" invert="false"/>
+			<subpin wireid="3" invert="false"/>
+		</connection>
+		<connection flow="out" pinid="1" wireid="1" invert="false"/>
+	</component>
+	<component id="2" def="Reader" x="120" y="-70" direction="right" flip="false">
+		<connection flow="in" pinid="0" wireid="0" invert="false"/>
+	</component>
+	<component id="3" def="Reader" x="120" y="-20" direction="right" flip="false">
+		<connection flow="in" pinid="0" wireid="1" invert="false"/>
+	</component>
+	<component id="4" def="Toggle" x="-125" y="-80" direction="right" flip="false">
+		<connection flow="out" pinid="0" wireid="2" invert="false"/>
+	</component>
+	<component id="5" def="Toggle" x="-130" y="-20" direction="right" flip="false">
+		<connection flow="out" pinid="0" wireid="3" invert="false"/>
+	</component>
+	<annotation x="-175" y="-80" text="A" fontsize="12"/>
+	<annotation x="-175" y="-20" text="B" fontsize="12"/>
+	<annotation x="165" y="-70" text="Sum" fontsize="12"/>
+	<annotation x="170" y="-20" text="Carry" fontsize="12"/>
+</custom_component>

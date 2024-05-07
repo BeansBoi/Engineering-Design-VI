@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project>
+	<metadata>
+		<version smartsim="1.4.1"/>
+	</metadata>
+	<name>Project 1</name>
+	<description></description>
+	<component root="true">/home/pinto/Desktop/SmartSim_ProjComp/ha_comp.ssc</component>
+</project>
