@@ -1,5 +1,6 @@
 The use of Command Line
 We had to run these lines of code in the terminal
+```
 $ hostname
 $ env
 $ ps
